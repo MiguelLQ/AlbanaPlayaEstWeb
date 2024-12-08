@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -259,6 +255,10 @@
     {
       "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
     },
     {
       "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\0445cbdb-1a40-4787-8be2-881a38e2fffd_pngegg.png",
