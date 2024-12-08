@@ -294,4 +294,4 @@ C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\re
 C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\albanaPlayaEst.pdb
 C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\albanaPlayaEst.genruntimeconfig.cache
 C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\ref\albanaPlayaEst.dll
-C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\MANAGER\RiderProjects\albanaPlayaEst\albanaPlayaEst\obj\Debug\net8.0\albanaPlayaEst.sourcelink.json

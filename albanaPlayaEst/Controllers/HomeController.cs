@@ -47,8 +47,7 @@ public class HomeController : Controller
         // Pasar los datos a la vista
         return View(dashboardData);  // Pasa el DTO a la vista
     }
-
-
+    [Authorize(Roles = "Administrador,Supervisor, Empleado")]
     public IActionResult Privacy()
     {
         return View();
