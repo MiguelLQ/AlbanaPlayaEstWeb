@@ -1,0 +1,143 @@
+@model albanaPlayaEst.Dto.DetalleAsignacionDto
+
+@{
+    var fechaSalida = Model.FechaHoraSalida.HasValue ? Model.FechaHoraSalida.Value.ToString("dd/MM/yyyy HH:mm") : "Salida Pendiente";
+}
+
+<h2 class="text-center mb-4 text-primary">Detalles de Asignación</h2>
+
+<div class="container">
+    <div class="row">
+        <!-- Columna 1: Espacio, Vehículo y Cliente -->
+        <div class="col-md-6">
+            <!-- Card para Espacio -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title">Detalles del Espacio</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Descripción del Espacio:</strong> @Model.Descr_esp</li>
+                        <li><strong>Ubicación del Espacio:</strong> @Model.Ubi_esp</li>
+                        <li><strong>Estado del Espacio:</strong> @(Model.Estad_esp ? "Ocupado" : "Disponible")</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card para Vehículo -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title">Detalles del Vehículo</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Placa del Vehículo:</strong> @Model.PlacaV</li>
+                        <li><strong>Marca del Vehículo:</strong> @Model.MarcV</li>
+                        <li><strong>Modelo del Vehículo:</strong> @Model.ModelV</li>
+                        <li><strong>Color del Vehículo:</strong> @Model.ColorV</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card para Cliente -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title">Detalles del Cliente</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Nombre del Cliente:</strong> @Model.Nom_cliente</li>
+                        <li><strong>Apellido del Cliente:</strong> @Model.Apell_cliente</li>
+                        <li><strong>Teléfono del Cliente:</strong> @Model.Tel_cliente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna 2: Tipo de Vehículo, Fechas y Pago -->
+        <div class="col-md-6">
+            <!-- Card para Tipo de Vehículo -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-warning text-white">
+                    <h5 class="card-title">Tipo de Vehículo</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Tipo de Vehículo:</strong> @Model.DescrTipV</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card para Fecha de Entrada y Salida -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="card-title">Fechas de Entrada y Salida</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Fecha de Entrada:</strong> @Model.FechaEntrada.ToString()</li>
+                        <li><strong>Fecha de Salida:</strong> @Model.FechaHoraSalida.ToString()</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card para Pago -->
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="card-title">Detalles del Pago</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Pago Realizado:</strong> @Model.MontPag.ToString("C")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Opcional: botón de regreso -->
+<a href="@Url.Action("Index", "Asig")" class="btn btn-outline-primary m-4">Regresar</a>
+
+
+    <style>
+        /* Estilo para las tarjetas */
+        .card {
+            border-radius: 10px;
+        }
+
+        .card-header {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            font-size: 0.85rem;
+        }
+
+        /* Botón de regreso */
+        .btn-outline-primary {
+            font-size: 0.8rem;
+            padding: 8px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Estilos adicionales para la estructura */
+        .container {
+            margin-top: 20px;
+        }
+
+        .text-primary {
+            color: #007bff !important;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+    </style>
+

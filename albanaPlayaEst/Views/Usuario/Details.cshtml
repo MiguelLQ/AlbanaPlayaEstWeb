@@ -1,0 +1,42 @@
+@model albanaPlayaEst.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalles del Usuario";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">Detalles del Usuario</h1>
+        <dl class="row" style="font-size: 1rem;">
+            <!-- Nombre -->
+            <dt class="col-sm-4 fw-bold text-primary">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <!-- Correo -->
+            <dt class="col-sm-4 fw-bold text-primary">
+                @Html.DisplayNameFor(model => model.Correo)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Correo)
+            </dd>
+            
+            <!-- Roles -->
+            <dt class="col-sm-4 fw-bold text-primary">
+                @Html.DisplayNameFor(model => model.Roles)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Roles)
+            </dd>
+        </dl>
+
+        <!-- Botones -->
+        <div class="d-flex justify-content-around mt-4">
+            <a asp-action="Edit" asp-route-id="@Model?.Id_user" class="btn btn-warning rounded-pill px-4 shadow-sm">Editar</a>
+            <a asp-action="Index" class="btn btn-secondary rounded-pill px-4 shadow-sm">Volver</a>
+        </div>
+    </div>
+</div>

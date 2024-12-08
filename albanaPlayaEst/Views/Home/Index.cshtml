@@ -1,0 +1,182 @@
+﻿@model albanaPlayaEst.Dto.DashboardDto
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Total de Vehículos -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-lg rounded border-primary">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4">
+                        <i class="material-icons">directions_car</i> Total Vehículos
+                    </h5>
+                    <p class="card-text h2">@Model.TotalVehiculos</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar" style="width: 100%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total de Espacios -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-lg rounded border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-success mb-4">
+                        <i class="material-icons">location_city</i> Total Espacios
+                    </h5>
+                    <p class="card-text h2">@Model.TotalEspacios</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar bg-success" style="width: 100%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Espacios Disponibles -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-lg rounded border-info">
+                <div class="card-body">
+                    <h5 class="card-title text-info mb-4">
+                        <i class="material-icons">check_circle</i> Espacios Disponibles
+                    </h5>
+                    <p class="card-text h2">@Model.EspaciosDisponibles</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar bg-info" style="width: 50%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Espacios Ocupados -->
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-lg rounded border-danger">
+                <div class="card-body">
+                    <h5 class="card-title text-danger mb-4">
+                        <i class="material-icons">cancel</i> Espacios Ocupados
+                    </h5>
+                    <p class="card-text h2">@Model.EspaciosOcupados</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar bg-danger" style="width: 75%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Total de Ingresos -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-lg rounded border-warning">
+                <div class="card-body">
+                    <h5 class="card-title text-warning mb-4">
+                        <i class="material-icons">attach_money</i> Total Ingresos
+                    </h5>
+                    <p class="card-text h2">@Model.TotalIngresos.ToString("C")</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar bg-warning" style="width: 80%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total de Registros -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-lg rounded border-secondary">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary mb-4">
+                        <i class="material-icons">format_list_numbered</i> Total Registros
+                    </h5>
+                    <p class="card-text h2">@Model.TotalRegistros</p>
+                    <div class="progress my-3">
+                        <div class="progress-bar bg-secondary" style="width: 60%" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Añadir estos estilos CSS para una mejor apariencia -->
+<style>
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-title .material-icons {
+        margin-right: 10px;
+        font-size: 1.75rem;
+    }
+
+    .card-text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .progress {
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    .card-body {
+        background-color: #f8f9fa;
+        padding: 30px;
+        position: relative;
+    }
+
+    .card {
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Agregar bordes de colores a las tarjetas */
+    .card.border-primary {
+        border-left: 10px solid #007bff;
+    }
+
+    .card.border-success {
+        border-left: 10px solid #28a745;
+    }
+
+    .card.border-info {
+        border-left: 10px solid #17a2b8;
+    }
+
+    .card.border-danger {
+        border-left: 10px solid #dc3545;
+    }
+
+    .card.border-warning {
+        border-left: 10px solid #ffc107;
+    }
+
+    .card.border-secondary {
+        border-left: 10px solid #6c757d;
+    }
+</style>

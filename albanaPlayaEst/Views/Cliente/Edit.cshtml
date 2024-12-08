@@ -1,0 +1,63 @@
+@model albanaPlayaEst.Models.Cliente
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+        <h4 class="text-center mb-3">Información del Cliente</h4>
+        <hr />
+
+        <form asp-action="Edit">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Cod_cliente" />
+
+            <!-- Nombre del Cliente -->
+            <div class="form-group">
+                <label asp-for="Nom_cliente" class="control-label">Nombre</label>
+                <input asp-for="Nom_cliente" class="form-control" />
+                <span asp-validation-for="Nom_cliente" class="text-danger"></span>
+            </div>
+
+            <!-- Apellido del Cliente -->
+            <div class="form-group">
+                <label asp-for="Apell_cliente" class="control-label">Apellido</label>
+                <input asp-for="Apell_cliente" class="form-control" />
+                <span asp-validation-for="Apell_cliente" class="text-danger"></span>
+            </div>
+
+            <!-- Teléfono del Cliente -->
+            <div class="form-group">
+                <label asp-for="Tel_cliente" class="control-label">Teléfono</label>
+                <input asp-for="Tel_cliente" class="form-control" />
+                <span asp-validation-for="Tel_cliente" class="text-danger"></span>
+            </div>
+
+            <!-- DNI del Cliente -->
+            <div class="form-group">
+                <label asp-for="Dni_cliente" class="control-label">DNI</label>
+                <input asp-for="Dni_cliente" class="form-control" />
+                <span asp-validation-for="Dni_cliente" class="text-danger"></span>
+            </div>
+
+            <!-- Botón de Guardar -->
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary btn-block rounded-pill" />
+            </div>
+        </form>
+
+        <hr class="my-4" />
+
+        <!-- Enlace para volver a la lista -->
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-action="Index" class="btn btn-secondary rounded-pill px-4 shadow-sm">
+                <i class="fas fa-list"></i> Volver a la Lista
+            </a>
+        </div>
+    </div>
+</div>

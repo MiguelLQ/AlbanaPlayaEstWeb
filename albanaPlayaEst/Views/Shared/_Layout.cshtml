@@ -1,0 +1,219 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@inject albanaPlayaEst.Services.UsuarioService UsuarioService
+
+@{
+    var fotoPerfil = User.Identity.IsAuthenticated
+    ? User.FindFirst("FotoPerfil")?.Value ?? "~/lib/bootstrap/dist/img/user.jpg"
+    : "~/lib/bootstrap/dist/img/user.jpg";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - albanaPlayaEst</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/custom.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/albanaPlayaEst.styles.css" asp-append-version="true"/>
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="body-overlay"></div>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <img src="~/lib/bootstrap/dist/img/logo.png" class="img-fluid"/>
+        </div>
+        <ul class="list-unstyled component m-0">
+
+            <li class="active">
+                @{
+                    var userNam = User.Identity.Name;
+                    var userRole = User.FindAll(ClaimTypes.Role).Select(c => c.Value).ToArray();
+                }
+                @if (!string.IsNullOrEmpty(userNam))
+                {
+                    <div class="profile-info text-center">
+                        <strong class="d-block text-white">@userNam</strong>
+                        <a  class="dashboard btn mt-2 text-white" style="background-color: #007bff">
+                            <i class="material-icons text-white">security</i> @string.Join(", ", userRole)
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <p>Usuario no logueado</p>
+                }
+            </li>
+            @if (User.IsInRole("Empleado"))
+            {
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Asig" asp-action="Index"><i class="material-icons">add_circle</i>Asignar</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Asig" asp-action="EspaciosOcupados"><i class="material-icons">remove_circle</i>liberar</a>
+                </li>
+            }
+            <li class="dropdown">
+                <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false"
+                   class="dropdown-toggle">
+                    <i class="material-icons">storage</i>Gestión de Registros
+                </a>
+                <ul class="collapse list-unstyled menu" id="homeSubmenu4">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index"><i class="material-icons">   people</i>Clientes Registrados</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Vehiculo" asp-action="Index"><i class="material-icons">   directions_car</i>Vehículos Registrados</a>
+                </ul>
+            </li>
+            @if (User.IsInRole("Administrador"))
+            {
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false"
+                       class="dropdown-toggle">
+                        <i class="material-icons">settings</i> Gestión
+                    </a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Metodpag" asp-action="Index">
+                                <i class="material-icons">payment</i> Método de pago
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Tipovehic" asp-action="Index">
+                                <i class="material-icons">directions_car</i> Tipo vehículo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Espacio" asp-action="Index">
+                                <i class="material-icons">location_on</i> Espacio
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index"><i class="material-icons">group</i>Usuarios</a>
+                </li>
+            }
+            @if (User.IsInRole("Administrador") || User.IsInRole("Empleado")|| User.IsInRole("Supervisor"))
+            {
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="RegistroRecurrente" asp-action="Index"><i class="material-icons">loop</i>Reg Recurrente</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Registro" asp-action="Index"><i class="material-icons">   history</i>Historial de Registros</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="material-icons">   home</i>Dashboard</a>
+                </li>
+            }
+        </ul>
+    </div>
+    <!-- navar -->
+    <div id="content">
+        <div class="top-navbar">
+            <div class="xd-topbar pb-4">
+                <div class="row">
+                    <div class="col-2 col-md-1 col-lg-1   align-self-center">
+                        <div class="xp-menubar position-fixed">
+                            <span class="material-icons text-white">signal_cellular_alt</span>
+                        </div>
+                    </div>
+                    <!--perfil de usuario-->
+                    <div class="">
+                        <div class="xp-profilebar">
+                            <h1 class="text-white nombreEmp">Albana</h1>
+                            <nav class="navbar navbar-expand justify-content-end">
+                                <ul class="nav navbar-nav">
+                                    <!-- Notificaciones, etc. -->
+                                    <li class="dropdown nav-item active">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">
+                                            <span class="material-icons">notifications</span>
+                                            <span class="notification">4</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Tienes 1 notificación</a></li>
+                                            <li><a href="#">Tienes 1 notificación</a></li>
+                                            <li><a href="#">Tienes 1 notificación</a></li>
+                                            <li><a href="#">Tienes 1 notificación</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="material-icons">question_answer</span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown nav-item">
+                                        <a class="nav-link" href="#" data-toggle="dropdown">
+                                            <!-- Foto del usuario -->
+                                            <img src="@fotoPerfil" style="width:30px; border-radius:50%;"/>
+                                            <span class="xp-user-live"></span>
+                                        </a>
+                                        <ul class="dropdown-menu small-menu">
+                                            <li>
+                                                <a href="@Url.Action("Perfil", "Usuario")">
+                                                    <span class="material-icons">person_outline</span>
+                                                    Perfil
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="material-icons">settings</span>
+                                                    Configuración
+                                                </a></li>
+                                            <li>
+                                                <a asp-controller="Acceso" asp-action="Salir">
+                                                    <span class="material-icons">logout</span>
+                                                    Cerrar Sesión
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    
+</div>
+<footer class="border-top footer text-white">
+    <div class="container">
+        &copy; 2024 - albanaPlayaEst - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".xp-menubar").on('click',function(){
+            $("#sidebar").toggleClass('active');
+            $("#content").toggleClass('active');
+        });
+
+        $('.xp-menubar,.body-overlay').on('click',function(){
+            $("#sidebar,.body-overlay").toggleClass('show-nav');
+        });
+
+    });
+</script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

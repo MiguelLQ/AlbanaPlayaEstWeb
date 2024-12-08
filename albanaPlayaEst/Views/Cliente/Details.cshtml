@@ -1,0 +1,37 @@
+@model albanaPlayaEst.Models.Cliente
+
+@{
+    ViewData["Title"] = "Detalles del Cliente";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+        <h4 class="text-center mb-3">Información del Cliente</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-4 font-weight-bold">Nombre</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Nom_cliente)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Apellido</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Apell_cliente)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Teléfono</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Tel_cliente)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">DNI</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Dni_cliente)</dd>
+        </dl>
+
+        <div class="d-flex justify-content-between">
+            <a asp-action="Edit" asp-route-id="@Model?.Cod_cliente" class="btn btn-primary btn-sm rounded-pill px-4">
+                <i class="fas fa-edit"></i> Editar
+            </a>
+            <a asp-action="Index" class="btn btn-secondary btn-sm rounded-pill px-4">
+                <i class="fas fa-arrow-left"></i> Volver a la Lista
+            </a>
+        </div>
+    </div>
+</div>

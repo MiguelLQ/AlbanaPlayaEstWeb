@@ -1,0 +1,57 @@
+@model albanaPlayaEst.Models.Registro
+
+@{
+    ViewData["Title"] = "Detalles del Registro";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <h1 class="text-center " style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+        <hr />
+        
+        <dl class="row">
+            <!-- Fecha de Entrada -->
+            <dt class="col-sm-4 fw-bold text-end">Fecha de Entrada:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FechaEntrada)</dd>
+
+            <!-- Fecha y Hora de Salida -->
+            <dt class="col-sm-4 fw-bold text-end">Fecha de Salida:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FechaHoraSalida)</dd>
+
+            <!-- Ubicación del Espacio -->
+            <dt class="col-sm-4 fw-bold text-end">Espacio:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodEspNavigation.Ubi_esp)</dd>
+
+            <!-- Color del Vehículo -->
+            <dt class="col-sm-4 fw-bold text-end">Vehículo:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodVNavigation.PlacaV)</dd>
+            
+            <dt class="col-sm-4 fw-bold text-end">Cliente:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodVNavigation.CodCliNavigation.Nom_cliente)</dd>
+            <dt class="col-sm-4 fw-bold text-end">Cliente:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodVNavigation.CodCliNavigation.Apell_cliente)</dd>
+
+            <!-- Código de Pago -->
+            <dt class="col-sm-4 fw-bold text-end">Monto de Pago:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodPagNavigation.MontPag)</dd>
+            <dt class="col-sm-4 fw-bold text-end">Fecha de Pago:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodPagNavigation.FechaPag)</dd>
+            <dt class="col-sm-4 fw-bold text-end">Pago Recurrente:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodPagNavigation.EsPagoRecurrente)</dd>
+            <dt class="col-sm-4 fw-bold text-end">Estado de Pago:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.CodPagNavigation.Estado)</dd>
+        </dl>
+
+        <hr class="my-4" />
+
+        <!-- Botones de navegación -->
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-action="Edit" asp-route-id="@Model?.CodReg" class="btn btn-warning rounded-pill px-4 shadow-sm">
+                <i class="fas fa-edit"></i> Editar
+            </a>
+            <a asp-action="Index" class="btn btn-secondary rounded-pill px-4 shadow-sm">
+                <i class="fas fa-list"></i> Volver a la Lista
+            </a>
+        </div>
+    </div>
+</div>

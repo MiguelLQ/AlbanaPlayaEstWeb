@@ -1,0 +1,54 @@
+@model albanaPlayaEst.Models.Espacio
+
+@{
+    ViewData["Title"] = "Detalles del Espacio";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h2 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h2>
+
+        <h4 class="text-center mb-3">Detalles del Espacio</h4>
+        <div>
+            <dl class="row">
+                <!-- Estado del Espacio -->
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Estad_esp)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Estad_esp)
+                </dd>
+
+                <!-- Ubicación del Espacio -->
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Ubi_esp)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Ubi_esp)
+                </dd>
+
+                <!-- Descripción del Espacio -->
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Descr_esp)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Descr_esp)
+                </dd>
+
+                <!-- Costo del Espacio -->
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cost_esp)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cost_esp)
+                </dd>
+            </dl>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="text-center mt-4">
+            <a asp-action="Edit" asp-route-id="@Model?.Cod_esp" class="btn btn-warning btn-lg w-100 rounded-pill mb-3">Editar</a>
+            <a asp-action="Index" class="btn btn-secondary btn-lg w-100 rounded-pill">Volver a la lista</a>
+        </div>
+    </div>
+</div>

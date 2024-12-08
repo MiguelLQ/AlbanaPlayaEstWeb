@@ -1,0 +1,60 @@
+@model albanaPlayaEst.Models.Espacio
+
+@{
+    ViewData["Title"] = "Crear Espacio";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h2 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h2>
+
+        <h4 class="text-center mb-3">Crear un Nuevo Espacio</h4>
+        <form asp-action="Create" class="bg-light p-4 rounded shadow-sm">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Estado del Espacio (Checkbox) -->
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Estad_esp"/>
+                    @Html.DisplayNameFor(model => model.Estad_esp)
+                </label>
+                <span asp-validation-for="Estad_esp" class="text-danger"></span>
+            </div>
+
+            <!-- Ubicación del Espacio -->
+            <div class="form-group">
+                <label asp-for="Ubi_esp" class="control-label">Ubicación del Espacio</label>
+                <input asp-for="Ubi_esp" class="form-control"/>
+                <span asp-validation-for="Ubi_esp" class="text-danger"></span>
+            </div>
+
+            <!-- Descripción del Espacio -->
+            <div class="form-group">
+                <label asp-for="Descr_esp" class="control-label">Descripción</label>
+                <input asp-for="Descr_esp" class="form-control"/>
+                <span asp-validation-for="Descr_esp" class="text-danger"></span>
+            </div>
+
+            <!-- Costo del Espacio -->
+            <div class="form-group">
+                <label asp-for="Cost_esp" class="control-label">Costo</label>
+                <input asp-for="Cost_esp" class="form-control"/>
+                <span asp-validation-for="Cost_esp" class="text-danger"></span>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <div class="form-group text-center p-4">
+                <input type="submit" value="Crear" class="btn btn-primary btn-lg w-100 rounded-pill" style="background-color: #007bff; border-color: #007bff;"/>
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <a asp-action="Index" class="btn btn-secondary btn-lg w-100 rounded-pill" style="background-color: #6c757d; border-color: #6c757d;">Volver a la lista</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

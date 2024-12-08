@@ -1,0 +1,139 @@
+@using Azure.Core
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<albanaPlayaEst.Models.Registro>
+
+@* Verificar si hay una alerta de pago caducado y mostrarla *@
+@if (TempData["AlertaPagoCaducado"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["AlertaPagoCaducado"]
+    </div>
+}
+@if (TempData["MensajeExito"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["MensajeExito"]
+    </div>
+}
+@{
+    var alertaRenovacion = TempData["AlertaRenovación"] as string;
+    if (!string.IsNullOrEmpty(alertaRenovacion))
+    {
+        <div class="alert alert-warning">
+            @alertaRenovacion
+        </div>
+    }
+}
+@if (TempData["Mensaje"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["Mensaje"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="main-content container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-wrapper shadow-sm rounded bg-white p-3">
+
+                <div class="table-title d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="mb-0">Lista de Registros con Pagos Recurrentes</h2>
+                </div>
+
+                <!-- Tabla responsiva -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover w-100" id="myTables">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Es</th>
+                            <th>@Html.DisplayNameFor(model => model.FechaEntrada)</th>
+                            <th>@Html.DisplayNameFor(model => model.FechaHoraSalida)</th>
+                            <th>Ubicación</th>
+                            <th>Placa</th>
+                            <th>DNI</th>
+                            <th>Monto</th>
+                            <th>Estado</th>
+                            <th>fecha de pago</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.CodPagNavigation.EsPagoRecurrente)</td>
+                            <td>@Html.DisplayFor(modelItem => item.FechaEntrada)</td>
+                            <td>@Html.DisplayFor(modelItem => item.FechaHoraSalida)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodEspNavigation.Ubi_esp)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodVNavigation.PlacaV)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodVNavigation.CodCliNavigation.Dni_cliente)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodPagNavigation.MontPag)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodPagNavigation.Estado)</td>
+                            <td>@Html.DisplayFor(modelItem => item.CodPagNavigation.FechaPag)</td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center">
+                                    <a asp-action="CargarParaNuevoPago" asp-route-id="@item.CodReg" class="btn btn-sm btn-warning mx-1">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a asp-action="ConfirmarCancelacion" asp-route-id="@item.CodReg" class="btn btn-sm btn-danger mx-1">
+                                        <i class="fas fa-times-circle"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .table-responsive {
+        overflow-x: auto;
+    }
+    .table th {
+        white-space: nowrap; /* Evita que el texto se envuelva */
+        text-align: center; /* Centra el texto */
+        padding: 10px 5px; /* Añadir algo de espaciado */
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Hace que la tabla sea desplazable */
+    }
+
+    .table {
+        width: 100%; /* Asegura que la tabla use el 100% del ancho disponible */
+    }
+
+</style>
+@section Scripts
+{
+    <script>
+        $(document).ready(function() {
+            $('#myTables').DataTable({
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando 0 registros de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sSearch": "Buscar:",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente",
+                        "sLast": "Último"
+                    }
+                }
+            });
+        });
+
+    </script>
+}
+<!-- Incluye Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">

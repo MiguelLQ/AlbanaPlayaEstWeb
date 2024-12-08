@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|c:\\users\\manager\\riderprojects\\albanaplayaest\\albanaplayaest\\data\\da_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|solutionrelative:albanaplayaest\\data\\da_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|c:\\users\\manager\\riderprojects\\albanaplayaest\\albanaplayaest\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|solutionrelative:albanaplayaest\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|c:\\users\\manager\\riderprojects\\albanaplayaest\\albanaplayaest\\views\\asig\\liberarespacio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|solutionrelative:albanaplayaest\\views\\asig\\liberarespacio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|c:\\users\\manager\\riderprojects\\albanaplayaest\\albanaplayaest\\views\\asig\\asignarv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|solutionrelative:albanaplayaest\\views\\asig\\asignarv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|c:\\users\\manager\\riderprojects\\albanaplayaest\\albanaplayaest\\controllers\\asigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E515F25-6AE1-402A-B753-9D52DA78C614}|albanaPlayaEst\\albanaPlayaEst.csproj|solutionrelative:albanaplayaest\\controllers\\asigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DA_Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Data\\DA_Usuarios.cs",
+              "RelativeDocumentMoniker": "albanaPlayaEst\\Data\\DA_Usuarios.cs",
+              "ToolTip": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Data\\DA_Usuarios.cs",
+              "RelativeToolTip": "albanaPlayaEst\\Data\\DA_Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:41:34.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "albanaPlayaEst\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "albanaPlayaEst\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T15:11:31.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LiberarEspacio.cshtml",
+              "DocumentMoniker": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Asig\\LiberarEspacio.cshtml",
+              "RelativeDocumentMoniker": "albanaPlayaEst\\Views\\Asig\\LiberarEspacio.cshtml",
+              "ToolTip": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Asig\\LiberarEspacio.cshtml",
+              "RelativeToolTip": "albanaPlayaEst\\Views\\Asig\\LiberarEspacio.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T15:10:47.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsignarV.cshtml",
+              "DocumentMoniker": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Asig\\AsignarV.cshtml",
+              "RelativeDocumentMoniker": "albanaPlayaEst\\Views\\Asig\\AsignarV.cshtml",
+              "ToolTip": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Views\\Asig\\AsignarV.cshtml",
+              "RelativeToolTip": "albanaPlayaEst\\Views\\Asig\\AsignarV.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T15:09:14.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsigController.cs",
+              "DocumentMoniker": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Controllers\\AsigController.cs",
+              "RelativeDocumentMoniker": "albanaPlayaEst\\Controllers\\AsigController.cs",
+              "ToolTip": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\Controllers\\AsigController.cs",
+              "RelativeToolTip": "albanaPlayaEst\\Controllers\\AsigController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T15:08:57.82Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

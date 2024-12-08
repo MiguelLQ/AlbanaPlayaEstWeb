@@ -1,0 +1,116 @@
+@model albanaPlayaEst.Dto.AsignarVDto
+
+<h2 class="text-center  text-primary">Liberar Espacio</h2>
+
+<div class="container">
+    <form id="LiberarEspacioForm" asp-action="LiberarEspacio" asp-controller="Asig" method="post">
+        @Html.AntiForgeryToken()
+
+        <!-- Campos ocultos -->
+        <input type="hidden" name="CodReg" value="@Model.CodReg" />
+        <input type="hidden" name="Cod_esp" value="@Model.Cod_esp" />
+        <input type="hidden" name="Cod_pag" value="@Model.cod_Pag" />
+        <input type="hidden" name="Cod_cliente" value="@Model.Cod_cliente" />
+        <input type="hidden" name="CodV" value="@Model.CodV" />
+        <input type="hidden" name="CodTipV" value="@Model.CodTipV" />
+        <input type="hidden" name="CodMetd" value="@Model.CodMetd" />
+        <input type="hidden" name="PlacaV" value="@Model.PlacaV" />
+
+        <div class="row">
+            <!-- Columna 1: Detalles del espacio -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Detalles del Espacio</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Espacio:</strong> @Model.Descr_esp</p>
+                        <p><strong>Placa del Vehículo:</strong> @Model.PlacaV</p>
+                        <p><strong>Cliente:</strong> @Model.Nom_cliente @Model.Apell_cliente</p>
+                        <p><strong>Fecha de Entrada:</strong> @Model.FechaEntrada?.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p><strong>Monto Total:</strong> s/. @Model.MontPag.ToString("F2")</p>
+                    </div>
+                </div>
+
+                <!-- Campo para seleccionar fecha y hora de salida -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h5>Fecha y Hora de Salida</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="FechaHoraSalida" class="form-label">Seleccione la fecha y hora</label>
+                            <input type="datetime-local" class="form-control" id="FechaHoraSalida" name="FechaHoraSalida" 
+                                   value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" required />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2: Detalles de Pago -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-warning text-white">
+                        <h5>Detalles de Pago</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Monto pagado -->
+                        <div class="form-group mb-3">
+                            <label for="MontPag" class="form-label">Monto Pagado</label>
+                            <input type="number" step="0.01" class="form-control" id="MontPag" name="MontPag" 
+                                   value="@Model.MontPag.ToString("F2")" placeholder="Ingrese el monto pagado" required />
+                        </div>
+
+                        <!-- Método de Pago -->
+                        <div class="form-group">
+                            <label for="CodMetd" class="form-label">Método de Pago</label>
+                            <select asp-for="CodMetd" class="form-select" asp-items="@(ViewData["MetodosPago"] as IEnumerable<SelectListItem>)">
+                                <option value="">Seleccione un método</option>
+                            </select>
+                            <span asp-validation-for="CodMetd" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success btn-lg me-3 shadow">Confirmar Liberación</button>
+            <a asp-action="EspaciosOcupados" asp-controller="Asig" class="btn btn-secondary btn-lg shadow">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#LiberarEspacioForm').submit(function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    url: '@Url.Action("LiberarEspacio", "Asig")',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.success) {
+                            alert("Espacio liberado correctamente.");
+                            window.location.href = '@Url.Action("EspaciosOcupados", "Asig")';
+                        } else {
+                            alert("Error: " + response.errorMessage);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error en la solicitud AJAX: ", error);
+                        alert("Error en la solicitud.");
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,36 @@
+@model albanaPlayaEst.Models.Metodpag
+
+@{
+    ViewData["Title"] = "Crear Método de Pago";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h2 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h2>
+
+        <h4 class="text-center mb-3">Método de Pago</h4>
+
+        <form asp-action="Create" class="bg-light p-4 rounded shadow-sm">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-group">
+                <label asp-for="DescrMetd" class="font-weight-bold">Descripción del Método</label>
+                <input asp-for="DescrMetd" class="form-control" placeholder="Ingrese la descripción del método" />
+                <span asp-validation-for="DescrMetd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-center pt-4">
+                <input type="submit" value="Crear" class="btn btn-primary btn-lg w-100 rounded-pill" style="background-color: #007bff; border-color: #007bff;" />
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <a asp-action="Index" class="btn btn-secondary btn-lg w-100 rounded-pill" style="background-color: #6c757d; border-color: #6c757d;">Volver a la lista</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

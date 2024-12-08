@@ -1,0 +1,98 @@
+@model albanaPlayaEst.Dto.RegistroNuevoPagoDto
+
+@{
+    ViewData["Title"] = "Registrar Nuevo Pago";
+}
+
+@if (TempData["AlertaPagoCaducado"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["AlertaPagoCaducado"]
+    </div>
+}
+
+<h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <form asp-action="RegistrarNuevoPago" method="post" class="bg-light p-4 border rounded shadow-sm">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="CodReg" value="@Model.CodRegExistente"/>
+            <input type="hidden" name="Cod_esp" value="@Model.CodEsp"/>
+
+            <!-- Código de Registro -->
+            <div class="form-group">
+                <label asp-for="CodRegExistente" class="control-label">Código de Registro</label>
+                <input asp-for="CodRegExistente" class="form-control" readonly/>
+            </div>
+
+            <!-- Código de Espacio -->
+            <div class="form-group">
+                <label asp-for="CodEsp" class="control-label">Código de espacio</label>
+                <input asp-for="CodEsp" class="form-control" readonly/>
+            </div>
+
+            <!-- Código de Vehículo -->
+            <div class="form-group">
+                <label asp-for="CodV" class="control-label">Código de vehículo</label>
+                <input asp-for="CodV" class="form-control" readonly/>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaEntrada" class="control-label">Fecha de entrada</label>
+                <input asp-for="FechaEntrada" class="form-control" readonly/>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaHoraSalida" class="control-label">Fecha de salida</label>
+                <input asp-for="FechaHoraSalida" class="form-control" readonly/>
+            </div>
+            <!-- Monto Anterior -->
+            <div class="form-group">
+                <label asp-for="MontoAnterior" class="control-label">Monto Anterior</label>
+                <input asp-for="MontoAnterior" class="form-control" readonly/>
+            </div>
+
+            <!-- Nuevo Monto -->
+            <div class="form-group">
+                <label asp-for="NuevoMonto" class="control-label">Nuevo Monto</label>
+                <input asp-for="NuevoMonto" class="form-control"/>
+            </div>
+
+            <!-- Fecha de Pago -->
+            <div class="form-group">
+                <label for="NuevaFechaEntrada">Nueva Fecha de Entrada</label>
+                <input type="datetime-local" class="form-control" id="NuevaFechaEntrada" name="NuevaFechaEntrada" />
+            </div>
+            <div class="form-group">
+                <label for="NuevaFechaHoraSalida">Nueva Fecha de Salida</label>
+                <input type="datetime-local" class="form-control" id="NuevaFechaHoraSalida" name="NuevaFechaHoraSalida" />
+            </div>
+            <!-- Método de Pago -->
+            <div class="form-group">
+                <label asp-for="CodMetd" class="control-label">Método de Pago</label>
+                <select asp-for="CodMetd" class="form-control" asp-items="ViewBag.MetodosPago"></select>
+            </div>
+
+            <!-- Estado del Pago -->
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input asp-for="Estado" type="checkbox" class="form-check-input"/>
+                    Estado del Pago
+                </label>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-lg w-100" style="background-color: #007bff; border-color: #007bff;">
+                    Registrar Pago
+                </button>
+            </div>
+            <div class="text-center mt-3">
+                <a asp-action="Index" class="btn btn-secondary btn-lg w-100 rounded-pill" style="background-color: #6c757d; border-color: #6c757d;">Volver a la lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

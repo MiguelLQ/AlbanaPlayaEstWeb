@@ -1,0 +1,42 @@
+@model albanaPlayaEst.Dto.VehiculoDto
+
+@{
+    ViewData["Title"] = "Detalles del Vehículo";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+        <dl class="row">
+            <dt class="col-sm-4 font-weight-bold">Marca</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.MarcV)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Modelo</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.ModelV)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Color</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.ColorV)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Placa</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.PlacaV)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Tipo de Vehículo</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.DescrTipV)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">Dni Cliente</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Dni_cliente)</dd>
+        </dl>
+
+        <div class="d-flex justify-content-between">
+            <!-- Icono Material para Editar -->
+            <a asp-action="Edit" asp-route-id="@Model?.CodV" class="btn btn-primary btn-sm rounded-pill px-4">
+                <i class="material-icons">edit</i> Editar
+            </a>
+            <!-- Icono Material para Volver -->
+            <a asp-action="Index" class="btn btn-secondary btn-sm rounded-pill px-4">
+                <i class="material-icons">arrow_back</i> Volver a la Lista
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+@model albanaPlayaEst.Models.Registro
+
+<div class="container mt-5">
+    <h3 class="text-center text-danger">Confirmar Cancelación del Plan Recurrente</h3>
+    <p class="text-center">¿Está seguro de que desea cancelar el plan recurrente para el vehículo con placa <strong>@Model.CodVNavigation.PlacaV</strong>?</p>
+    <p class="text-center text-muted">Esta acción no eliminará el registro, pero el cliente ya no estará asociado a un plan recurrente.</p>
+
+    <div class="text-center mt-4">
+        <form asp-action="CancelarPlan" method="post">
+            <input type="hidden" name="id" value="@Model.CodReg" />
+            <button type="submit" class="btn btn-danger">Sí, Cancelar</button>
+            <a asp-action="Index" class="btn btn-secondary">No, Volver</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+@model albanaPlayaEst.Dto.VehiculoDto
+
+@{
+    ViewData["Title"] = "Editar Vehículo";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 600px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+        <h4 class="text-center mb-3">Modificar Información del Vehículo</h4>
+        <hr />
+
+        <form asp-action="Edit">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="CodV" />
+
+            <div class="form-group">
+                <label asp-for="MarcV" class="control-label font-weight-bold"></label>
+                <input asp-for="MarcV" class="form-control"/>
+                <span asp-validation-for="MarcV" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ModelV" class="control-label font-weight-bold"></label>
+                <input asp-for="ModelV" class="form-control"/>
+                <span asp-validation-for="ModelV" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ColorV" class="control-label font-weight-bold"></label>
+                <input asp-for="ColorV" class="form-control"/>
+                <span asp-validation-for="ColorV" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PlacaV" class="control-label font-weight-bold"></label>
+                <input asp-for="PlacaV" class="form-control"/>
+                <span asp-validation-for="PlacaV" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DescrTipV" class="control-label font-weight-bold"></label>
+                <input asp-for="DescrTipV" class="form-control"/>
+                <span asp-validation-for="DescrTipV" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Dni_cliente" class="control-label font-weight-bold"></label>
+                <input asp-for="Dni_cliente" class="form-control"/>
+                <span asp-validation-for="Dni_cliente" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-center">
+                <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg rounded-pill px-5"/>
+            </div>
+        </form>
+
+        <div class="d-flex justify-content-center mt-3">
+            <a asp-action="Index" class="btn btn-secondary btn-sm rounded-pill px-4">
+                <i class="fas fa-arrow-left"></i> Volver a la Lista
+            </a>
+        </div>
+    </div>
+</div>

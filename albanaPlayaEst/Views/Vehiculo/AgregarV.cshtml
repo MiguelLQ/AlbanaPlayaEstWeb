@@ -1,0 +1,122 @@
+@model albanaPlayaEst.Dto.VehiculoDto
+
+@{
+    ViewData["Title"] = "Agregar Vehículo";
+}
+<h2 class="text-center mb-3" style="color: #007bff; margin-bottom: 1rem;">Crear Nuevo Registro</h2>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 800px; border-radius: 15px;">
+        <form asp-action="AgregarV" method="post" class="bg-light p-4 border rounded shadow-sm">
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="Nom_cliente" class="control-label font-weight-bold">Nombre del Cliente</label>
+                        <input asp-for="Nom_cliente" class="form-control" required />
+                        <span asp-validation-for="Nom_cliente" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="Apell_cliente" class="control-label font-weight-bold">Apellido del Cliente</label>
+                        <input asp-for="Apell_cliente" class="form-control" required />
+                        <span asp-validation-for="Apell_cliente" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="Tel_cliente" class="control-label font-weight-bold">Teléfono del Cliente</label>
+                        <input asp-for="Tel_cliente" class="form-control" required />
+                        <span asp-validation-for="Tel_cliente" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="Dni_cliente" class="control-label font-weight-bold">DNI / Carnet de Extranjería del Cliente</label>
+                        <input asp-for="Dni_cliente" class="form-control"
+                               pattern="^\d{8}(\d{4})?$" title="El DNI debe tener 8 dígitos o el Carnet de Extranjería 12 dígitos." required />
+                        <span asp-validation-for="Dni_cliente" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="MarcV" class="control-label font-weight-bold">Marca</label>
+                        <input asp-for="MarcV" class="form-control" />
+                        <span asp-validation-for="MarcV" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="ModelV" class="control-label font-weight-bold">Modelo</label>
+                        <input asp-for="ModelV" class="form-control" />
+                        <span asp-validation-for="ModelV" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="ColorV" class="control-label font-weight-bold">Color</label>
+                        <input asp-for="ColorV" class="form-control" />
+                        <span asp-validation-for="ColorV" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="PlacaV" class="control-label font-weight-bold">Placa</label>
+                        <input asp-for="PlacaV" class="form-control" />
+                        <span asp-validation-for="PlacaV" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <label asp-for="CodTipV" class="control-label font-weight-bold">Tipo de Vehículo</label>
+                        <select asp-for="CodTipV" class="form-control" asp-items="ViewBag.CodTipV"></select>
+                        <span asp-validation-for="CodTipV" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-sm  w-100 rounded-pill" style="background-color: #007bff; border-color: #007bff; padding: 0.75rem 1rem;">Agregar</button>
+                <a asp-action="Index" class="btn btn-secondary btn-sm w-100 mt-2 rounded-pill" style="background-color: #6c757d; border-color: #6c757d; padding: 0.75rem 1rem;">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+<style>
+    h2 {
+        margin-bottom: 0.5rem; /* Reduce la separación debajo del título */
+    }
+
+    .form-group {
+        margin-bottom: 0.5rem; /* Reduce el espacio entre los campos de entrada */
+    }
+
+    input, select {
+        padding: 0.75rem; /* Ajusta el tamaño del padding para que los campos no se vean tan amplios */
+    }
+
+    .btn {
+        padding: 0.75rem 1rem; /* Ajusta el tamaño del botón */
+        margin-top: 1rem; /* Reduce el espacio entre los botones */
+    }
+
+</style>

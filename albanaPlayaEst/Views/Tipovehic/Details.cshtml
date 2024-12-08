@@ -1,0 +1,27 @@
+@model albanaPlayaEst.Models.Tipovehic
+
+@{
+    ViewData["Title"] = "Detalles del Tipo de Vehículo";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h2 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h2>
+
+        <h4 class="text-center mb-3">Detalles del Tipo de Vehículo</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-4 font-weight-bold">Descripción del Tipo</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.DescrTipV)</dd>
+        </dl>
+
+        <div class="text-center mt-3">
+            <a asp-action="Edit" asp-route-id="@Model?.CodTipV" class="btn btn-warning btn-lg w-100 rounded-pill" style="background-color: #ffc107; border-color: #ffc107;">Editar</a>
+        </div>
+
+        <div class="text-center mt-3">
+            <a asp-action="Index" class="btn btn-secondary btn-lg w-100 rounded-pill" style="background-color: #6c757d; border-color: #6c757d;">Volver a la lista</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,333 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\albanaPlayaEst.bundle.scp.css",
+      "PackagePath": "staticwebassets\\albanaPlayaEst.or8btumpc3.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\css\\custom.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\img\\auto.png",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\img\\auto.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\img\\logo.png",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\0445cbdb-1a40-4787-8be2-881a38e2fffd_pngegg.png",
+      "PackagePath": "staticwebassets\\uploads\\0445cbdb-1a40-4787-8be2-881a38e2fffd_pngegg.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\10383443-e3c4-4e8b-8031-177b42cdbbe2_user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\10383443-e3c4-4e8b-8031-177b42cdbbe2_user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\4b800d58-292c-4cd7-a3eb-787ac2efe53a_logo.png",
+      "PackagePath": "staticwebassets\\uploads\\4b800d58-292c-4cd7-a3eb-787ac2efe53a_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\682f04ad-797d-4cf7-8f69-ace60c8b08fd_user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\682f04ad-797d-4cf7-8f69-ace60c8b08fd_user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\8a14218f-5b9e-4c87-9595-2a496d028c86_1aafdb8cf55bdb5d5ac3c4d5ab1be6a8_cjetmdh4msb1dndcsarg_image.png",
+      "PackagePath": "staticwebassets\\uploads\\8a14218f-5b9e-4c87-9595-2a496d028c86_1aafdb8cf55bdb5d5ac3c4d5ab1be6a8_cjetmdh4msb1dndcsarg_image.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\b64158db-6cb6-461c-9562-ce7ddddea000_user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b64158db-6cb6-461c-9562-ce7ddddea000_user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\d0211bd8-fd6e-454d-a796-4882d3276981_user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d0211bd8-fd6e-454d-a796-4882d3276981_user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\dcccfcd1-a6a3-4d8a-983b-471442afcf91_rb_4114.png",
+      "PackagePath": "staticwebassets\\uploads\\dcccfcd1-a6a3-4d8a-983b-471442afcf91_rb_4114.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\ded4dc1d-fd61-4ef5-93e7-5cbfde16892f_logo.png",
+      "PackagePath": "staticwebassets\\uploads\\ded4dc1d-fd61-4ef5-93e7-5cbfde16892f_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\e8f81112-5fd9-425a-976b-c21948fd607d_logo.png",
+      "PackagePath": "staticwebassets\\uploads\\e8f81112-5fd9-425a-976b-c21948fd607d_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\logo.png",
+      "PackagePath": "staticwebassets\\uploads\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MANAGER\\RiderProjects\\albanaPlayaEst\\albanaPlayaEst\\wwwroot\\uploads\\user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.albanaPlayaEst.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.albanaPlayaEst.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.albanaPlayaEst.props",
+      "PackagePath": "build\\albanaPlayaEst.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.albanaPlayaEst.props",
+      "PackagePath": "buildMultiTargeting\\albanaPlayaEst.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.albanaPlayaEst.props",
+      "PackagePath": "buildTransitive\\albanaPlayaEst.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

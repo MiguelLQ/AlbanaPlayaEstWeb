@@ -1,0 +1,42 @@
+@model albanaPlayaEst.Models.Usuario
+
+@{
+    ViewData["Title"] = "Perfil de Usuario";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 500px; border-radius: 15px;">
+        <h1 class="text-center mb-4" style="font-weight: bold; color: #007bff;">@ViewData["Title"]</h1>
+
+        <!-- Foto de perfil -->
+        <div class="text-center mb-4">
+            <img src="@Model.FotoPerfil" alt="Foto de perfil" class="img-thumbnail" style="max-width: 150px; max-height: 150px; width: auto; height: auto;" />
+        </div>
+        
+        <!-- Formulario para actualizar foto de perfil -->
+        <form asp-action="ActualizarFotoPerfil" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <label for="FotoPerfil" class="fw-bold">Seleccionar foto de perfil</label>
+                <input type="file" name="FotoPerfil" id="FotoPerfil" class="form-control"/>
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill px-4 shadow-sm w-100">Actualizar Foto</button>
+        </form>
+
+        <hr class="my-4" />
+
+        <!-- Detalles del usuario -->
+        <div>
+            <p><strong class="fw-bold">Nombre:</strong> @Model.Nombre</p>
+            <p><strong class="fw-bold">Correo:</strong> @Model.Correo</p>
+            <p><strong class="fw-bold">Roles:</strong> @string.Join(", ", Model.Roles)</p>
+
+            <!-- Botón para editar perfil -->
+            <div class="d-flex justify-content-center mt-4">
+                <a href="@Url.Action("Edit", "Usuario", new { id = Model.Id_user })" class="btn btn-warning rounded-pill px-4 shadow-sm">
+                    <i class="fas fa-edit"></i> Editar Perfil
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

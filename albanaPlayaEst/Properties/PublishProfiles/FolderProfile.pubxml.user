@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\Albana</_PublishTargetUrl>
+    <History>True|2024-12-03T21:26:55.5876217Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=localhost%3bDatabase=albanabd%3bUser=root%3bPassword=miguel1234%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="albanaPlayaEst.Data.AlbanaDBcontext">
+      <Value>Server=localhost%3bDatabase=albanabd%3bUser=root%3bPassword=miguel1234%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
